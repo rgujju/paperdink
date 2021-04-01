@@ -1,0 +1,90 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 text-left">
+      <img src="{{ .Site.Params.Logo | absURL }}" alt="Logo" width="50%" style="margin:0px 0px 15px 0px" />
+      <p>
+      <b> paperd.ink </b>is a beautiful e-paper display board to show calendar, weather, to-do lists,
+      notifications, custom images and much more. Its an open source, low power e-paper
+      display device.
+      The simple, elegant display allows you to get rid of all distractions and work
+      peacefully. Since its open source and fully hackable, you can play around and
+      customize for yourself!
+      </p>
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | absURL }}" role="button">Get started</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="" role="button">Fund Us (Coming soon)</a>
+    </div>
+    <div class="col-lg-6 col-xl-8">
+     <img src="tilted_low_quality.png" alt="image" />
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+<section class="section section-sm">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5">
+        <img src="{{"images/undraw_signal_searching.svg" | absURL}}" alt="stay connected" class="feature-image" />
+        <h2 class="h4">Stay connected</h2>
+        <p>FCC/CE certified WiFi & Bluetooth to help you stay connected.</p>
+      </div>
+      <div class="col-lg-5">
+        <img src="{{"images/undraw_nature_benefits.svg" | absURL}}" alt="Low Power" class="feature-image" />
+        <h2 class="h4">Low power</h2>
+        <p>Designed for low power consumption. Under <b>20uA</b> in deep sleep. With LiPo battery and charger.</p>
+      </div>
+      <div class="col-lg-5">
+        <img src="{{"images/undraw_proud_coder.svg" | absURL}}" alt="Hackable" class="feature-image" />
+        <h2 class="h4">Hackable</h2>
+        <p>Onboard CP2104 USB-UART converter so you can extend or customize.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5">
+        <img src="{{"images/undraw_notify.svg" | absURL}}" alt="Get Notified" class="feature-image" />
+        <h2 class="h4">Get notified</h2>
+        <p>Piezo buzzer for notifications and alerts.</p>
+      </div>
+      <div class="col-lg-5">
+        <img src="{{"images/undraw_switches.svg" | absURL}}" alt="Interact" class="feature-image" />
+        <h2 class="h4">Interact</h2>
+        <p>4 tactile buttons</p>
+      </div>
+      <div class="col-lg-5">
+        <img src="{{"images/undraw_image_folder.svg" | absURL}}" alt="Store" class="feature-image" />
+        <h2 class="h4">Store</h2>
+        <p>MicroSD card slot for storing custom images, data, and more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-sm">
+  <div class="container">
+    <h1 class="h1 text-center">Check us out on</h1> 
+    <div class="row justify-content-center text-center">
+      {{ range .Site.Menus.social -}}
+         <div class="col-lg-5">
+          <a href="{{ .URL | absURL }}">
+          <img src="{{ .Pre }}" alt="{{ .Name | safeHTML }}" class="social-image" />
+          <h2 class="h4">{{ .Name | safeHTML }}</h2>
+          </a>
+        </div>
+      {{ end -}}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+{{ end }}

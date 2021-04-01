@@ -1,0 +1,59 @@
+# Meta Data for SEO
+
+## Homepage
+title = "paperd.ink"
+logo = "images/paperd_ink.svg"
+titleSeparator = ""
+titleAddition = ""
+description = "Paperd.ink is a beautiful open source e-paper display board"
+
+## Open Graph + Twitter Cards
+images = ["doks.png"]
+twitterSite = "henkverlinde"
+twitterCreator = "henkverlinde"
+facebookAuthor = "verlinde.henk"
+facebookPublisher = "verlinde.henk"
+ogLocale = "en_US"
+
+## JSON-LD
+schemaType = "Organization"
+schemaLogo = "paperd_ink.svg"
+schemaTwitter = "https://twitter.com/paperddotink"
+schemaLinkedIn = ""
+schemaGitHub = "https://github.com/rgujju/paperdink"
+schemaSection = "blog"
+
+## Sitelinks Search Box
+siteLinksSearchBox = false
+
+## Chrome Browser
+themeColor = "#f5f5f5"
+
+# Images
+quality = 85
+bgColor = "#f5f5f5"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+
+# Footer
+footer = "Powered by <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
+
+# Alert
+alert = false
+alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
+
+# Edit Page
+docsRepo = ""
+editPage = false
+
+[options]
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  flexSearch = true
+  darkMode = true
+  bootStrapJs = false
+  breadCrumb = false
+  highLight = true
+  kaTex = false

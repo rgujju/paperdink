@@ -1,0 +1,52 @@
+[[docs]]
+  name = "Prologue"
+  weight = 10
+  identifier = "prologue"
+  url = "/docs/prologue/"
+
+[[docs]]
+  name = "Examples"
+  weight = 20
+  identifier = "examples"
+  url = "/docs/examples/"
+
+[[docs]]
+  name = "Help"
+  weight = 60
+  identifier = "help"
+  url = "/docs/help/"
+
+[[main]]
+  name = "Docs"
+  url = "/docs/prologue/introduction/"
+  weight = 10
+
+#[[main]]
+#  name = "Blog"
+#  url = "/blog/"
+#  weight = 20
+
+[[social]]
+  name = "Hackaday"
+  pre = "images/terminal.svg"
+  url = "https://hackaday.io/project/168668-paperdink"
+
+[[social]]
+  name = "GitHub"
+  pre = "images/github.svg"
+  url = "https://github.com/rgujju/paperdink"
+
+[[social]]
+  name = "Instagram"
+  pre = "images/instagram.svg"
+  url = "https://www.instagram.com/paperd.ink/"
+
+[[social]]
+  name = "Twitter"
+  pre = "images/twitter.svg"
+  url = "https://twitter.com/paperddotink"
+
+# [[footer]]
+#   name = "Privacy"
+#   url = "/privacy-policy/"
+#   weight = 10
