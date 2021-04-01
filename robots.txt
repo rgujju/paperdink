@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: paperdink/sitemap.xml
+Sitemap: /sitemap.xml
