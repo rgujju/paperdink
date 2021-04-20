@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rgujju.github.io/paperdink/sitemap.xml
+Sitemap: https://paperd.ink/sitemap.xml
